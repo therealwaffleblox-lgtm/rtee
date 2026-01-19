@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ultimate Downloadable Website</title>
+<style>
+/* RESET & BASIC */
+* {margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+body {line-height:1.6;background:#f4f4f4;color:#333;}
+
+/* NAVIGATION */
+nav{display:flex;justify-content:space-between;align-items:center;background:#6200EE;padding:1rem 2rem;}
+nav .logo{color:white;font-weight:bold;font-size:1.5rem;}
+nav ul{list-style:none;display:flex;}
+nav ul li{margin-left:1.5rem;}
+nav ul li a{color:white;text-decoration:none;font-weight:500;}
+nav ul li a:hover{text-decoration:underline;}
+
+/* SECTIONS */
+section{padding:4rem 2rem;text-align:center;transition: all 0.6s ease-out;}
+#hero{background:#BB86FC;color:white;}
+#hero img{max-width:100%;margin-top:2rem;border-radius:10px;}
+#about .features{display:flex;justify-content:center;margin-top:2rem;flex-wrap:wrap;}
+#about .features img{width:150px;margin:1rem;border-radius:8px;transition: transform 0.3s;}
+#about .features img:hover{transform: scale(1.1);}
+form{display:flex;flex-direction:column;max-width:400px;margin:1rem auto 0;}
+form input, form textarea{padding:0.8rem;margin-bottom:1rem;border:1px solid #ccc;border-radius:5px;}
+form button{padding:0.8rem;background:#6200EE;color:white;border:none;border-radius:5px;cursor:pointer;}
+form button:hover{background:#3700B3;}
+.social-icons{margin-top:1rem;}
+.social-icons img{width:40px;margin:0 0.5rem;cursor:pointer;}
+.social-icons img:hover{transform: scale(1.2); transition:0.3s;}
+footer{text-align:center;padding:1rem;background:#6200EE;color:white;}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  #about .features{flex-direction:column;}
+  nav ul{flex-direction:column;margin-top:1rem;}
+  nav ul li{margin:0.5rem 0;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="logo">MySite</div>
+  <ul>
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <h1>Welcome to Ultimate Website</h1>
+  <p>This website is fully downloadable and ready to open.</p>
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAYAAAA+V0H+AAAACXBIWXMAAAsTAAALEwEAmpwYAAABTUlEQVR4nO3RwQ2AIBADwR+/+91bA0G0RVR8bL6Bz+gYEAAAAAAAAAAAAAAABkHPvPvXuvXd7mec56nLw5PzfnR+XPpAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGCPAmqgAFPG24GQAAAABJRU5ErkJggg==" alt="Hero Image">
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Us</h2>
+  <p>We create awesome websites, fast and easy.</p>
+  <div class="features">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAYAAAB/5I3PAAAACXBIWXMAAAsTAAALEwEAmpwYAAABGElEQVR4nO3PwQkAMAzAsP7/p05KZgIwxP7Y6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBo5oAAADk3D2AQAAAADgnwcBAAAA4J8HAQAAAOCfBwEAAADgnwcBAAAA4J8HAQAAAOCfBwEAAADgnwcBAAAA4J8HAQAAAOCfBwEAAADgnwcBAAAA4J8HAQAAAOCfBwEAAADgnwcBAAAA4J8HAQAAAOCfBwEAAADgnwcBAAAA4J8HAQAAAOCfBwEAAADgnwcBAAAA4J8HAQAAAOCfBwEAAADgnhcBAAAA4J8HAQAAAOCfBwEAAADgnwcBAAAA4J8HAAAAGsCSOkHxX+6FAAAAAElFTkSuQmCC" alt="Feature 1">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAYAAAB/5I3PAAAACXBIWXMAAAsTAAALEwEAmpwYAAABGElEQVR4nO3PwQkAMAzAsP7/p05KZgIwxP7Y6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBo5oAAADk3D2AQAAAADgnwcBAAAA4J8HAQAAAOCfBwEAAADgnwcBAAAA4J8HAQAAAOCfBwEAAADgnwcBAAAA4J8HAQAAAOCfBwEAAADgnwcBAAAA4J8HAQAAAOCfBwEAAADgnwcBAAAA4J8HAQAAAOCfBwEAAADgnwcBAAAA4J8HAQAAAOCfBwEAAADgnwcBAAAA4J8HAQAAAOCfBwEAAADgnwcBAAAA4J8HAQAAAOCfBwEAAADgnhcBAAAA4J8HAQAAAOCfBwEAAADgnwcBAAAA4J8HAAAAGsCSOkHxX+6FAAAAAElFTkSuQmCC" alt="Feature 2">
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+  <div class="social-icons">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAABGElEQVR4nO3PMQ0AAAgCoNm/9E4wVbYNEJpZ6j2gAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8G7fAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4BhsEzgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNi0wMS0xOVQxMjozNTowMSswMDowMHACbTEAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjYtMDEtMTlUMTI6MzU6MDErMDA6MDA6mU2R2AAAAAElFTkSuQmCC" alt="Facebook">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAABGElEQVR4nO3PMQ0AAAgCoNm/9E4wVbYNEJpZ6j2gAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8G7fAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4BhsEzgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNi0wMS0xOVQxMjozNTowMSswMDowMHACbTEAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjYtMDEtMTlUMTI6MzU6MDErMDA6MDA6mU2R2AAAAAElFTkSuQmCC" alt="Twitter">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAABGElEQVR4nO3PMQ0AAAgCoNm/9E4wVbYNEJpZ6j2gAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8G7fAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4BhsEzgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNi0wMS0xOVQxMjozNTowMSswMDowMHACbTEAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjYtMDEtMTlUMTI6MzU6MDErMDA6MDA6mU2R2AAAAAElFTkSuQmCC" alt="Instagram">
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>&copy; 2026 Ultimate Website. All rights reserved.</p>
+</footer>
+
+<script>
+// Scroll animation for sections
+const sections=document.querySelectorAll('section');
+window.addEventListener('scroll',()=>{
+  sections.forEach(sec=>{
+    const rect=sec.getBoundingClientRect();
+    if(rect.top<window.innerHeight-100){
+      sec.style.opacity=1;
+      sec.style.transform="translateY(0)";
+    }
+  });
+});
+sections.forEach(sec=>{
+  sec.style.opacity=0;
+  sec.style.transform="translateY(50px)";
+});
+</script>
+</body>
+</html>
